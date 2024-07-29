@@ -14,3 +14,55 @@
   justify-content: space-evenly;
   margin: var(--navbar-margin);
 }
+
+.section-landing{
+  text-align: center;
+}
+.landing-logo{
+  width: 60%;
+}
+
+.text-align{
+  text-align: center;
+}
+.flex-about{
+  display: flex;
+}
+
+.psychologist1{
+  display: flex;
+}
+.psychologist2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.services-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services{
+  margin-left: 30px;
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+.section-quote{
+  text-align: center;
+}
+.input-bottom{
+  display: flex;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo{
+  width: 10%;
+}
+
+

@@ -21,7 +21,7 @@
         <p>Psychologists || Psychotherapy</p>
       </section>
       <section class="section-about">
-        <h1>About</h1>
+        <h1 class="text-align">About</h1>
         <div class="flex-about">
           <h1>Healing takes time, and asking for help is a courageous step.</h1>
           <p>
@@ -35,7 +35,7 @@
         </div>
       </section>
       <section class="section-team">
-        <h1>Team</h1>
+        <h1 class="text-align">Team</h1>
         <div class="psychologist1">
           <img src="./images/psychologist1.png" alt="Psychologist 1" />
           <div class="psychologist1-info">
@@ -64,13 +64,15 @@
         </div>
       </section>
       <section class="section-services">
-        <h1>Services</h1>
-        <div class="services"><p>Cognitive Behavioral Therapy</p></div>
-        <div class="services"><p>Humanistic Therapy</p></div>
-        <div class="services"><p>Psychodynamic Therapy</p></div>
-        <div class="services"><p>Reminiscence Therapy</p></div>
-        <div class="services"><p>Validation Therapy</p></div>
-        <div class="services"><p>Memory and Brain Training</p></div>
+        <h1 class="text-align">Services</h1>
+        <div class="services-container">
+          <div class="services"><p>Cognitive Behavioral Therapy</p></div>
+          <div class="services"><p>Humanistic Therapy</p></div>
+          <div class="services"><p>Psychodynamic Therapy</p></div>
+          <div class="services"><p>Reminiscence Therapy</p></div>
+          <div class="services"><p>Validation Therapy</p></div>
+          <div class="services"><p>Memory and Brain Training</p></div>
+        </div>
       </section>
       <section class="section-quote">
         <p>
@@ -79,21 +81,28 @@
         </p>
       </section>
       <section class="section-contact">
-        <h1>Contact</h1>
+        <h1 class="text-align">Contact</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel rem
           voluptas neque quis non, cumque quam tenetur laborum recusandae unde!
         </p>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="E-mail" />
-          <input type="text" placeholder="Message" />
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-            <p>Join our e-mail list</p>
-          </label>
-          <button>Send</button>
+        <form class="section-form">
+          <div class="name-email-container">
+            <input class="input input-name" type="text" placeholder="Name" />
+            <input class="input input-email" type="text" placeholder="E-mail" />
+          </div>
+          <input
+            class="input input-message"
+            type="text"
+            placeholder="Message" />
+          <div class="input-bottom">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+              <p>Join our e-mail list</p>
+            </label>
+            <button>Send</button>
+          </div>
         </form>
       </section>
       <footer>
