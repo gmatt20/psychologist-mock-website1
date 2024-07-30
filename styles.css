@@ -1,13 +1,33 @@
-:root{
-  --main-padding: 30px;
-  --main-margin: 0 30px 0 30px;
+:root {
+  --main-padding: 100px;
+  --main-margin: 100px;
   --navbar-margin: 0 200px 0 200px;
+  --color1: #d3e0e1;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 400;
+}
+.image-container {
+  position: relative;
+}
+.center-to-image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.landing-image {
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -15,54 +35,154 @@
   margin: var(--navbar-margin);
 }
 
-.section-landing{
+.section-landing {
   text-align: center;
 }
-.landing-logo{
+.landing-logo {
   width: 60%;
 }
 
-.text-align{
-  text-align: center;
-}
-.flex-about{
-  display: flex;
+.section-about,
+.section-services,
+.section-contact {
+  margin: var(--main-margin);
 }
 
-.psychologist1{
+.text-align {
+  text-align: center;
+  font-size: 4rem;
+}
+.flex-about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 50px;
+}
+.about-width {
+  max-width: 50%;
+}
+.healing-text {
+  font-size: 2.5rem;
+}
+
+.section-team {
+  background-color: var(--color1);
+  width: 100%;
+  padding: var(--main-padding);
+}
+.psychologist1 {
   display: flex;
 }
-.psychologist2{
+.psychologist1-image {
+  max-width: 50%;
+}
+.psychologist2 {
   display: flex;
   flex-direction: row-reverse;
 }
-.services-container{
+.psychologist2-image {
+  max-width: 50%;
+}
+.services-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.services{
+.services {
   margin-left: 30px;
   height: 100px;
   width: 100px;
   background-color: blueviolet;
 }
 
-.section-quote{
+.section-quote {
   text-align: center;
 }
-.input-bottom{
+
+.section-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.input {
+  border: none;
+  background-color: var(--color1);
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+.name-email-container,
+.input-message-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-message {
+  width: 100%;
+}
+.input-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.toggle-switch {
+  -webkit-appearance: none;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #ccc;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+}
+.toggle-switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: white;
+  transition: left 0.3s;
+}
+.toggle-switch:checked {
+  background-color: green;
+}
+.toggle-switch:checked::after {
+  left: 70%;
 }
 
-footer{
+button {
+  font-family: "Montserrat";
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  width: 10rem;
+  background: rgb(171, 232, 239);
+  background: linear-gradient(
+    90deg,
+    odrgba(171, 232, 239, 1) 0%,
+    rgba(156, 222, 230, 1) 50%,
+    rgba(0, 206, 219, 1) 100%
+  );
+}
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--color1);
 }
-.footer-logo{
+.footer-logo {
   width: 10%;
 }
-
-
