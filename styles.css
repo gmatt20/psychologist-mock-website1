@@ -27,12 +27,20 @@ h1 {
 .landing-image {
   width: 100%;
 }
+.hero-h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.hero-p{
+  font-size: 1.5rem;
+}
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: var(--navbar-margin);
+  padding: 30px;
 }
 
 .section-landing {
@@ -65,6 +73,11 @@ h1 {
   font-size: 2.5rem;
 }
 
+.list{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
 .section-team {
   background-color: var(--color1);
   width: 100%;
@@ -83,6 +96,7 @@ h1 {
 .psychologist2-image {
   max-width: 50%;
 }
+
 .services-container {
   display: flex;
   align-items: center;
@@ -90,14 +104,19 @@ h1 {
   flex-wrap: wrap;
 }
 .services {
-  margin-left: 30px;
-  height: 100px;
-  width: 100px;
-  background-color: blueviolet;
+  margin: 10px;
+  padding: 30px;
+  width: 50%;
+  background-color: var(--color1);
+  text-align: center;
+  border-radius: 10px;
 }
 
 .section-quote {
   text-align: center;
+  background-color: var(--color1);
+  padding: 100px;
+  font-size: 30px;
 }
 
 .section-form {
@@ -175,6 +194,16 @@ button {
     rgba(156, 222, 230, 1) 50%,
     rgba(0, 206, 219, 1) 100%
   );
+  cursor: pointer;
+  transition: 0.1s;
+}
+button:hover{
+  border: 1px solid black;
+  background-color: rgb(141, 194, 200);
+  color: white;
+}
+button:active{
+  background-color: rgb(71, 97, 100);
 }
 
 footer {
@@ -182,6 +211,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: var(--color1);
+  padding: 50px;
 }
 .footer-logo {
   width: 10%;
